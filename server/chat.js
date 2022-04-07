@@ -42,7 +42,7 @@ alt.onClient("chat:message", (player, msg) => {
   }
 });
 
-export default function send(player, msg) {
+export function send(player, msg) {
   alt.emitClient(player, "chat:message", null, msg);
 }
 
